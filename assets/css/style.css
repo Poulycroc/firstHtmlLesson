@@ -1,0 +1,206 @@
+
+nav,
+main,
+footer,
+section {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    margin-top: 4rem;
+    color: #959595;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+}
+
+
+p{ 
+    font-size: 1.4rem;
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+/* navbar */
+
+.navbar {
+    height: 4rem;
+    position: fixed;
+    z-index: 2;
+	top: 0;
+    background-color: #222;
+    padding: 0;
+}
+
+.navbar a {
+	font-size: 1.2rem;
+    padding: .5rem 0;
+	color: white;
+	text-decoration: none;
+}
+
+.navbar button.navbar-toggler {
+    margin: 1rem;
+}
+
+.navbar .navbar-collapse {
+    background-color: #343a40;
+    padding: 0 2rem;
+    transform: translateY(-.5rem);
+}
+
+.navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar .navbar-brand  i {
+    font-size: 1.2rem;
+    padding: .5rem 1rem;
+}
+
+.navbar .navbar-nav {
+	align-items: center;
+	list-style-type: none;
+}
+
+.navbar .nav-item {
+	height: 100%;
+	align-items: center;
+    transition: .5s ease-in-out all;
+    padding: .5rem 2rem;
+}
+
+.navbar .dropdown-menu {
+    border: none;
+
+    background-color: #343a40;
+}
+
+
+.navbar .dropdown-menu a{
+    color: white;
+    text-align: center;
+    padding: 1rem 3rem;
+}
+
+
+.navbar .dropdown-menu a:hover{
+    background-color: #4a535b;  
+}
+
+.navbar form.form-inline {
+    justify-content: center;
+}
+
+.navbar form input {
+    margin-right: 1rem;
+    width: 50%;
+}
+
+
+/* feature */
+
+.feature {
+    background-color: yellowgreen;
+    color: greenyellow;
+}
+
+.feature  h1{
+    font-size: 6rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: greenyellow;
+}
+
+
+.feature  h1 i{
+    font-size: 5rem;
+    margin-right: 1rem;
+    
+}
+
+.feature p{
+    font-size: 1.6rem;
+}
+
+/* page header  */
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+    font-size: 3.5rem;
+}
+
+.article-intro a,
+.article-intro a img {
+    width: 100%;
+}
+
+.article-intro h3 a {
+    color: #337ab7;
+    text-decoration: none;
+    font-size: 2.4rem;
+}
+
+.img-rounded {
+    border-radius: 6px;
+    margin: 2rem 0 ;
+}
+
+/* orange section */
+.footer-blurb {
+    margin: 4rem 0 ;
+    padding: 6rem 0;
+    background-color: goldenrod;
+    color: black;
+}
+
+.footer-blurb  h3  {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.footer-blurb  h3 i {
+    font-size: 2.4rem;
+    padding: .5rem 1rem;
+}
+
+
+.small-print p a{
+    font-size: 1.4rem
+}
+@media (min-width: 992px) {
+
+    .navbar .nav-item:hover,
+    .navbar .nav-item.active {
+	    background-color: #4a535b;  
+    }
+
+    .navbar .dropdown-menu {
+        box-shadow: 2px 2px 7px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar .navbar-collapse {
+
+        transform: translateY(0rem);
+    }
+    .navbar form input {
+
+        width: 100%;
+    }
+    
+    
+
+}
