@@ -1,13 +1,74 @@
-/* .monelement {
-	background-color: aqua;
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	margin: 0px;
+	padding: 0px;
+	color: #959595;
 }
 
-.block {
-	width: 200px;
-	height: 200px;
+/* --------------------------------------------------------*/
+/* ----------------------- HEADER -------------------------*/
+/* --------------------------------------------------------*/
+
+
+header {
+	display: block;
+	background-color: black;
 }
-.float {
-	width: 100px;
-	height: 100px;
-	display: inline;
-} */
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+	color: white;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+#search_box {
+	float: right;
+}
+
+/* --------------------------------------------------------*/
+/* ------------------ GREEN SECTION -----------------------*/
+/* --------------------------------------------------------*/
+
+
+#green {
+	background-color: yellowgreen;
+	color: greenyellow;
+}
+
+
+/* --------------------------------------------------------*/
+/* --------------------- WHITE SECTION --------------------*/
+/* --------------------------------------------------------*/
+
+
+#white a{
+	font-size: 24px;
+	font-weight: bold;
+	color: #337ab7;
+	text-decoration: none;
+}
+
+#white a:hover {
+	color: #23527c;
+	text-decoration: underline;	
+}
+
+
+/* --------------------------------------------------------*/
+/* --------------------- ORANGE SECTION -------------------*/
+/* --------------------------------------------------------*/
+
+#orange {
+	background-color: goldenrod;
+	color: black;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 500;
+}
+
