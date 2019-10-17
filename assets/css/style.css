@@ -50,3 +50,35 @@ figure img {
 	display: inline-block;
 	width: 100%;
 }
+
+
+.before_example {
+	width: 300px;
+	height: 300px;
+	border: 2px solid red;
+	margin: 100px auto 200px;
+	position: relative;
+}
+
+.before_example:after {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	position: absolute;
+	left: 100%;
+}
+
+.before_example .box {
+	width: 50px;
+	height: 50px;
+	background-color: red;
+	position: absolute;
+	right: 100%;
+	transition: right ease-out 1000ms;
+}
+.before_example .box:hover {
+	background-color: #fff;
+	right: 95%;
+}
