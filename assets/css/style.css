@@ -52,33 +52,54 @@ figure img {
 }
 
 
-.before_example {
-	width: 300px;
-	height: 300px;
-	border: 2px solid red;
-	margin: 100px auto 200px;
+
+.hamburger {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
 	position: relative;
-}
+	margin: auto;
+	}
 
-.before_example:after {
-	content: '';
-	display: block;
-	width: 50px;
-	height: 50px;
-	background-color: red;
-	position: absolute;
-	left: 100%;
-}
+	.line1 {
+		width: 100px;
+		height: 10px;
+		background-color: black;
+	}
+	.line2 {
+		width: 100px;
+		height: 10px;
+		background-color: red;
+		position: absolute;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+	}
+	.line3 {
+		width: 100px;
+		height: 10px;
+		background-color: violet;
+		position: absolute;
+		bottom: 0%;
+	}
 
-.before_example .box {
-	width: 50px;
-	height: 50px;
-	background-color: red;
-	position: absolute;
-	right: 100%;
-	transition: right ease-out 1000ms;
-}
-.before_example .box:hover {
-	background-color: #fff;
-	right: 95%;
-}
+	
+	.hamburger:hover .line1 {
+		transform: rotate(45deg);
+		position: absolute;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+	}
+
+	.hamburger:hover .line2 {
+		transform: rotate(135deg);
+		position: absolute;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+	}
+	
+	.hamburger:hover .line3 {
+		opacity: 0;
+	}
