@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <title>our First website</title>
 </head>
 
@@ -17,74 +17,66 @@
   <!------------------------------------------------------------------->
 
   
-  <header>
+<header>
 
-    
     <!----------------------- HEADER NAVIGATION ------------------------->
-    
-      <nav>
-          <ul>
-    
-            <li id="logo">
-               <a href="index.html">
-                  </i> Logo
-               </a>
-            </li>
-    
-            <li id="home">
-                <a href="index.html">Home</a>
-            </li>
-    
-            <li class="link">
-                <a href="about.html">About</a>
-            </li>
-    
-            <li class="link">
-                <a href="products.html">Products</a>
-            </li>
-  <!--  
-            <li class="link">
-                <button type="dropbtn">Services</button>
-                    <ul class="dropdown-content">
-    
-                        <li class="droplink">
-                          <a href="#">Engage</a>
-                        </li>
-                        <li class="droplink">
-                          <a href="#">Pontificate</a>
-                        </li>
-                        <li class="droplink">
-                          <a href="#">Synergize</a>
-                        </li>
-    
-                      </ul>
-    
-            </li>
-    
-          </ul>
-      </nav>
--->
+
+
+  <section id="navigation">
+
+    <nav>
+      <ul>
+
+        <li>
+          <a id=logo href="#">
+              <span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+              Logo
+          </a>
+        </li>
+
+        <li>
+          <a href="#">Home</a>
+        </li>
+
+        <li>
+          <a href="#">About</a>
+        </li>
+
+        <li>
+          <a href="#">Products</a>
+        </li>
+
+        <li>
+          <a href="#">Services</a>
+        </li>
+
+      </ul>
+    </nav>    
+     
+  </section>
 
   <!------------------------ HEADER SEARCH BOX ------------------------->
 
 
-    <section id="search_box">
-      
-      <form action="/action_page.php">
-        <input type="text" name="search">
-        <button type="submit">
-          <img src="#" alt="Search Button">
-        </button>
-      </form>
+  <section id="search_box">
+    
+    <form action="/action_page.php">
+      <input type="text" name="search">
+      <button type="submit">
+        <img src="#" alt="Search Button">
+      </button>
+    </form>
 
-    </section>
+  </section>
 
 
-  </header>
+</header>
+
+
+
 
 
 <main id="main">  
-
 
   <!------------------------------------------------------------------->
   <!----------------------- GREEN SECTION ----------------------------->
@@ -93,9 +85,8 @@
 
 
   <section id="green">
-      <i class="fas fa-fire"></i>
     <h1>
-      <img/ src="#" alt="Drama icon"> 
+      <span class="glyphicon glyphicon-equalizer" aria-hidden="true"></span> 
       Dramatically Engage
     </h1>
 
@@ -121,7 +112,7 @@
 
   <!-------------------------- 3 images ------------------------------->
 
-
+    <div class="row">
   <!------------------------------ 1 ---------------------------------->
 
         <div class="col">
@@ -134,7 +125,9 @@
           </figure>
           
           <article>
-            <a href="#">Efficiently Unleash</a>
+            <h2> 
+              <a href="#">Efficiently Unleash</a>
+            </h2>
             <p>
               Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after
               installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
@@ -155,7 +148,7 @@
           </figure>
           
           <article>
-              <a href="#">Completely Synergize</a>
+            <a href="#">Completely Synergize</a>
             <p>
               Dramatically maintain clicks-and-mortar solutions without functional solutions. Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.  
             </p>
@@ -163,7 +156,7 @@
 
         </div>
 
-  <!------------------------------ 3 ---------------------------------->
+    <!------------------------------ 3 ---------------------------------->
 
         <div class="col">
 
@@ -175,14 +168,15 @@
           </figure>
           
           <article>
-              <a href="#">Dynamically Procrastinate</a>
+            <a href="#">Dynamically Procrastinate</a>
             <p>
               Professionally cultivate one-to-one customer service with robust ideas. Completely synergize resource taxing relationships via premier niche markets. Dynamically innovate resource-leveling customer service for state of the art customer service.
             </p>
           </article>
 
         </div>
-
+      
+      </div>
 
   </section>
 
@@ -192,19 +186,23 @@
 <!------------------------ ORANGE SECTION --------------------------->
 <!------------------------------------------------------------------->
 
-
   <section id="orange">
 
+<!-------------------------- 3 images ------------------------------->
 
-<!-------------------------- 3 elements ----------------------------->
+    <div class="row">
 
-
-<!------------------------------- 1 --------------------------------->
+<!------------------------------ 1 ---------------------------------->
 
       <div class="col">
           
           <article>
-            <h3><img/ src="#" alt="dynamic_icon">Dynamically Procrastinate</h3>
+
+            <h3>
+                <span class="glyphicon glyphicon-equalizer" aria-hidden="true"></span>
+                Dynamically Procrastinate
+            </h3>
+
             <p>
                 Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.            
             </p>
@@ -214,14 +212,16 @@
 
       </div>
 
-      
-<!------------------------------- 2 --------------------------------->  
-
+<!------------------------------ 2 ---------------------------------->
 
       <div class="col">
           
           <article>
-            <h3><img/ src="#" alt="efficient_icon">Efficiently Unleash</h3>
+
+            <h3><span class="glyphicon glyphicon-cloud-upload" aria-hidden="true"></span>
+              Efficiently Unleash
+            </h3>
+
             <p>
                 Dramatically maintain clicks-and-mortar solutions without functional solutions. Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.             
             </p>
@@ -231,13 +231,16 @@
 
       </div>
 
-<!------------------------------- 3 --------------------------------->
-
+<!------------------------------ 3 ---------------------------------->
 
       <div class="col">
           
           <article>
-            <h3><img/ src="#" alt="synergize_icon">Completely Synergize</h3>
+
+            <h3><span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
+              Completely Synergize
+            </h3>
+
             <p>
                 Professionally cultivate one-to-one customer service with robust ideas. Completely synergize resource taxing relationships via premier niche markets. Dynamically innovate resource-leveling customer service for state of the art customer service.            
             </p>
@@ -247,12 +250,11 @@
 
       </div>
 
+    </div>
 
   </section>
 
 </main>
-
-
 
 <!------------------------------------------------------------------->
 <!---------------------------- FOOTER ------------------------------->
@@ -273,8 +275,7 @@
 
     <p id="copyright">Copyright © Example.com 2015</p>
 
-  </div>
+  </footer>
 
-
-</footer>
+</body>
 
