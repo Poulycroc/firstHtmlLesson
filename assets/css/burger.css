@@ -1,0 +1,39 @@
+.hamburger {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger i.line {
+  width: 40px;
+  height: 3px;
+  background-color: tomato;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+input:not(:checked) + .hamburger i.line:first-child {
+  bottom: auto;
+}
+
+input:not(:checked) + .hamburger i.line:last-child {
+  top: auto;
+}
+
+input:checked + .hamburger i.line:first-child,
+input:checked + .hamburger i.line:last-child {
+  transition: transform ease-in-out 300ms;
+}
+
+input:checked + .hamburger i.line:nth-child(2) {
+  opacity: 0;
+}
+input:checked + .hamburger i.line:first-child {
+  transform: rotate(45deg);
+}
+input:checked + .hamburger i.line:last-child {
+  transform: rotate(-45deg);
+}
