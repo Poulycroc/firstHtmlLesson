@@ -15,25 +15,25 @@
   margin: auto;
 }
 
-input:not(:checked) + .hamburger i.line:first-child {
+.hamburger:not(:hover) i.line:first-child {
   bottom: auto;
 }
 
-input:not(:checked) + .hamburger i.line:last-child {
+.hamburger:not(:hover) i.line:last-child {
   top: auto;
 }
 
-input:checked + .hamburger i.line:first-child,
-input:checked + .hamburger i.line:last-child {
+.hamburger:hover i.line:first-child,
+.hamburger:hover i.line:last-child {
   transition: transform ease-in-out 300ms;
 }
 
-input:checked + .hamburger i.line:nth-child(2) {
+.hamburger:hover i.line:nth-child(2), input {
   opacity: 0;
 }
-input:checked + .hamburger i.line:first-child {
+.hamburger:hover i.line:first-child {
   transform: rotate(45deg);
 }
-input:checked + .hamburger i.line:last-child {
+.hamburger:hover i.line:last-child {
   transform: rotate(-45deg);
 }
